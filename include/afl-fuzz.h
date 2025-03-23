@@ -1113,7 +1113,7 @@ struct custom_mutator {
 };
 
 #if BITMAP_IMPL
-void save_bitmap(afl_state_t *afl, struct queue_entry *q)
+void save_bitmap(afl_state_t *afl, struct queue_entry *q);
 #endif
 
 void afl_state_init(afl_state_t *, uint32_t map_size);
