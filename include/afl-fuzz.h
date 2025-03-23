@@ -251,6 +251,9 @@ struct queue_entry {
 
   struct skipdet_entry *skipdet_e;
 
+#if BITMAP_IMPL
+  u8 *bitmap_name;
+#endif
 };
 
 struct extra_data {
